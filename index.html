@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE WARNING</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: "Times New Roman", "Bookman Old Style", serif;
+      background: #f4f1ea;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #3b2f2f;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: #ddd;
+      font-size: 17px;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #5a4545;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background: #765c5c;
+    }
+
+    /* MAIN */
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #3b2f2f;
+      margin-bottom: 15px;
+      font-size: 27px;
+    }
+
+    /* ABOUT */
+    .about {
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    /* CAST */
+    .cast-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .cast-card {
+      background: #f4f1ea;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .cast-card h3 {
+      color: #5a4545;
+      margin-bottom: 5px;
+    }
+
+    /* BUTTON */
+    .button {
+      display: inline-block;
+      background: #5a4545;
+      color: white;
+      padding: 13px 22px;
+      margin-top: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button:hover {
+      background: #3b2f2f;
+      transform: scale(1.03);
+    }
+
+    /* SCRIPT */
+    .file-section {
+      text-align: center;
+    }
+
+    .file-icon {
+      font-size: 55px;
+      margin: 10px;
+    }
+
+    .file-section p {
+      margin-bottom: 10px;
+    }
+
+    /* VIDEO */
+    .video-container {
+      text-align: center;
+    }
+
+    .video-container video {
+      width: 100%;
+      max-height: 550px;
+      margin-top: 20px;
+      border-radius: 12px;
+      background: black;
+    }
+
+    /* CREDITS */
+    .credits {
+      text-align: center;
+    }
+
+    .credits p {
+      margin: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #3b2f2f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      nav a {
+        padding: 12px 9px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Our One-Act Play</h1>
+    <p>A Collection of Our Script, Film, Cast, and Credits</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#cast">Cast</a>
+    <a href="#script">Script</a>
+    <a href="#film">Film</a>
+    <a href="#credits">Credits</a>
+  </nav>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="about">
+      <h2>About Our One-Act Play</h2>
+      <p>
+        Welcome to our One-Act Play webpage. This website contains our play's information, cast, script, film, and credits.
+      </p>
+      <br>
+      <p>
+        <strong>Title:</strong> THE WARNING <br>
+        <strong>Section:</strong> 9-PYTHAGORAS<br>
+        <strong>School:</strong> Your School<br>
+        <strong>School Year:</strong> 2026-2027
+      </p>
+    </section>
+
+    <!-- CAST -->
+    <section id="cast">
+      <h2>Cast and Characters</h2>
+      <div class="cast-container">
+        <div class="cast-card">
+          <h3>Deeone Youone Agustin</h3>
+          <p>MARTA–Boyet's Mother.</p>
+        </div>
+        <div class="cast-card">
+          <h3>Katie Seanelle Bulusan</h3>
+          <p>KYLIE–Boyet's best friend.</p>
+        </div>
+        <div class="cast-card">
+          <h3>Princess Janel Duran</h3>
+          <p>MS. AGUSTIN–The Principal.</p>
+        </div>
+        <div class="cast-card">
+          <h3>Julie Ann Quitalig</h3>
+          <p>MS. QUITALIG–Boyet's teacher.</p>
+        </div>
+        <div class="cast-card">
+          <h3>Khyzer Flynn Lanuza</h3>
+          <p>SIR BERNARD–The Teacher who knows about the incident.</p>
+        </div>
+        <div class="cast-card">
+          <h3>Rye lan Alviz Valerozo</h3>
+          <p>BOYET–The main character.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPT -->
+    <section id="script" class="file-section">
+      <h2>Our Script</h2>
+      <div class="file-icon">📄</div>
+      <p>Read or download the complete script of our one-act play.</p>
+      
+      <a href="https://docs.google.com/document/d/1hFfkou5RXmDKKX1Kc811kbAxuC-bbksr/edit?usp=drivesdk&ouid=113685085644979857094&rtpof=true&sd=true" target="_blank" class="button">
+        👁️ View Script
+      </a>
+      <br>
+      <a href="https://docs.google.com/document/d/1hFfkou5RXmDKKX1Kc811kbAxuC-bbksr/edit?usp=drivesdk&ouid=113685085644979857094&rtpof=true&sd=true" target="_blank" class="button">
+        ↓ Download Script
+      </a>
+    </section>
+
+
+    <!-- CREDITS -->
+    <section id="credits" class="credits">
+      <h2>Credits</h2>
+      <p><strong>Director:</strong> Deeone Youone Agustin</p>
+      <p><strong>Writers:</strong> Deeone Youone Agustin</p>
+      <p><strong>Cast:</strong> Khyzer Flynn Lanuza, Rye lan Alviz Valerozo, Deeone Youone Agustin, Katie Seanelle Bulusan, Princess Janel Duran, Julie Ann Quitalig</p>
+      <p><strong>Production Team:</strong> Khyzer Flynn Lanuza, Rye lan Alviz Valerozo, Deeone Youone Agustin, Katie Seanelle Bulusan, Princess Janel Duran, Julie Ann Quitalig</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 THE WARNING</p>
+    <p>Created by GROUP # 03</p>
+  </footer>
+
+</body>
+</html>
